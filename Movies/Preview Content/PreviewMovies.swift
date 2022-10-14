@@ -9,7 +9,7 @@ import Foundation
 
 let previewMovies: [MovieVM] = [
     .init(
-        id: UUID().uuidString,
+        id: 87844,
         title: "The Croods: A New Age",
         genres: "CARTOON, FAMILY",
         overView: "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs.",
@@ -20,7 +20,7 @@ let previewMovies: [MovieVM] = [
         isMarked: false
     ),
     .init(
-        id: UUID().uuidString,
+        id: 376733,
         title: "Monster Hunter",
         genres: "ACTION, FANTASY, THRILLER",
         overView: "A portal transports Cpt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home.",
@@ -31,9 +31,9 @@ let previewMovies: [MovieVM] = [
         isMarked: true
     ),
     .init(
-        id: UUID().uuidString,
+        id: 376389,
         title: "Deathstroke: Knights & Dragons - The Movie",
-        genres: "ACTION, FANTASY",
+        genres: "ACTION, FANTASY, THRILLER",
         overView: "The assassin Deathstroke tries to save his family from the wrath of H.I.V.E. and the murderous Jackal.",
         image: .init(
             small: "https://image.tmdb.org/t/p/w185/vFIHbiy55smzi50RmF8LQjmpGcx.jpg",

@@ -60,7 +60,7 @@ struct MovieDetailsScreen<ViewModel: MovieDetailsScreenViewModelProtocol>: View 
     }
 }
 
-struct MovieDetailsScreem_Previews: PreviewProvider {
+struct MovieDetailsScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MovieDetailsScreen(viewModel: MockMovieDetailsViewModel())

@@ -8,6 +8,17 @@
 import Foundation
 
 class MockViewModel: MoviesScreenViewModelProtocol {
+    func fetchTrendingMovies() {
+        
+    }
+
+    func fetchGenres() {
+        
+    }
+
+    func checkFavoriteMovies() {
+    }
+    
     var movies: [MovieVM] = previewMovies
 }
 

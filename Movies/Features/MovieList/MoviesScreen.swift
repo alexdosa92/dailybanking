@@ -9,6 +9,8 @@ import SwiftUI
 
 protocol MoviesScreenViewModelProtocol: ObservableObject {
     var movies: [MovieVM] { get }
+    func fetchTrendingMovies()
+    func fetchGenres()
 }
 
 struct MoviesScreen<ViewModel: MoviesScreenViewModelProtocol>: View {
@@ -24,8 +26,14 @@ struct MoviesScreen<ViewModel: MoviesScreenViewModelProtocol>: View {
                 .padding(.trailing, 16)
                 .listRowInsets(EdgeInsets())
             }
+            .onAppear(
+                perform: { viewModel.fetchGenres() }
+            )
             .navigationTitle("Movies")
         }
+        .onAppear(
+            perform: { viewModel.fetchGenres() }
+        )
         .navigationViewStyle(.stack)
     }
 

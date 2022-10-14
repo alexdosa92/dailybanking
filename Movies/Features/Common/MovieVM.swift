@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct MovieVM: Identifiable {
-    struct Image {
+struct MovieVM: Identifiable, Codable {
+    struct Image: Codable {
         let small: String
         let large: String
     }
 
-    let id: String
+    let id: Int
     let title: String
     let genres: String
     let overView: String
